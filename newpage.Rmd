@@ -1,0 +1,11 @@
+---
+title: "newpage"
+output: distill::distill_article
+date: "2023-10-26"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Love my new page.
