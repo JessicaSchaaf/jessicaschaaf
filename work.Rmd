@@ -1,0 +1,62 @@
+---
+title: "Work"
+output: 
+  distill::distill_article:
+    toc: true
+    toc_float: true
+---
+
+<div style="text-align: justify"> Most of my work concerns (computational) modeling of cognitive processes, including learning and decision making. I'm currently employed at the [Lifespan Cognitive Dynamics lab](https://lifespancognitivedynamics.com/) at the Donders Institute in Nijmegen. Below you can find ongoing projects (feel free to reach out for potential collaborations!), and links and short author summaries of my papers; sometimes accompanied by slides and/or visual summaries of the papers.</div> <br>
+
+You can find my dissertation on the development of reinforcement learning strategies [here](https://pure.uva.nl/ws/files/144664902/Thesis.pdf).
+
+## Ongoing projects
+
+### Time series
+
+- Bidirectional relationships between depressive mood and cognition. *In collaboration with* Ema Jovanovic and Rogier Kievit (Donders/Radboudumc).
+
+- The role of sleep quality in cognitive variability: A dynamic structural equation modeling approach. *In collaboration with* Afon Khari and Rogier Kievit (Donders/Radboudumc).
+
+### Reinforcement learning
+
+- Feedback matters: Children's feedback sensitivity in a large online learning platform. *In collaboration with* Michael Aristodemou, Rogier Kievit, and Prowise Learn (Donders/Radboudumc, UvA).
+
+- Inter- and intra-individual differences in exploratory behavior. *In collaboration with* Rogier Kievit and the CODEC team (Donders/Radboudumc).
+
+- Understanding, improving, and computational modeling of adolescents' climate-friendly choice. *In collaboration with* Wouter van den Bos, Cameron Brick, Hilde Huizenga, Lucas Molleman, and Peter Verkoeijen (UvA, EUR, Avans).
+
+- Working memory use in reinforcement learning in older adults. *In collaboration with* Leendert van Maanen and Irene van de Vijver (UU).
+
+## Papers
+
+### Most recent papers and preprints
+
+**Schaaf, J. V.**, Miletic, S., Van Duijvenvoorde, A. C. K., & Huizenga, H. M. (2025). [Interpretation of individual differences in compuational neuroscience using a latent input approach](https://doi.org/10.1016/j.dcn.2025.101512). *Developmental Cognitive Neuroscience*, 101512.
+
+**Schaaf, J. V.**, Sorensen, O., McCormick, E. M., Aristodemou, A., & Kievit, R. A. (2024). [Uncovering asymmetric temporal dynamics using threshold dynamics parameters](https://doi.org/10.31219/osf.io/3b5ra). *PsyArXiV*.
+
+**Schaaf, J. V.**, Dekkers, L. M. S., Kevenaar, S. T., Seijdel, N., Weeda, W. D., Jansen, B. R. J., Visser, I., & Huizenga, H. M. (2024). [First things first? Decision strategies in a consecutive contexts](https://osf.io/cywfd). *PsyArXiV*.
+
+### Reinforcement Learning
+
+**Schaaf, J. V.**, Johansson, A., Visser, I., & Huizenga, H. M. (2024). [What's in a name: The role of verbalization in reinforcement learning](https://doi.org/10.3758/s13423-024-02506-3). *Psychonomic Bulletin & Review*.
+
+**Schaaf, J. V.**, Weidinger, L., Molleman, L., & Van den Bos, W. (2024). [Test-retest reliability of reinforcement learning parameters](https://doi.org/10.3758/s13428-023-02203-4). *Behavior Research Methods*, *56*, 4582-4599. 
+
+Kramer, A.-W., **Schaaf, J. V.**, & Huizenga, H. M. (2023). [High-school students' willingness to invest effort in valenced feedback-learning tasks](https://doi.org/10.1016/j.lindif.2023.102375). *Learning and Individual Differences*, *108*, 102375.
+
+**Schaaf, J. V.**, Xu, B., Jepma, M., Visser, I., & Huizenga, H. M. (2022). [(Mal)Adaptive learning after switches between object-based and rule-based environments](https://doi.org/10.1007/s42113-022-00134-5). *Computational Brain & Behavior*, *5*, 157-167.
+
+Jepma, M., **Schaaf, J. V.**, Visser, I., & Huizenga, H. M. (2022). [Impaired learning to dissociate advantageous and disadvantageous risky choices in adolescents](https://doi.org/10.1038/s41598-022-10100-7). *Scientific Reports*, *12*(1), 6490.
+
+Jepma, M., **Schaaf, J. V.**, Visser, I., & Huizenga, H. M. (2022). [Effects of advice on experience-based learning in adolescents and adults](https://doi.org/10.1016/j.jecp.2021.105230). *Journal of Experimental Child Psychology*, *211*, 105230.
+
+Jepma, M., **Schaaf, J. V.**, Visser, I., & Huizenga, H. M. (2020). [Uncertainty-driven regulation of learning and exploration in adolescents: A computational account](https://doi.org/10.1371/journal.pcbi.1008276). 
+*PLoS Computational Biology*, *16*(9), e1008276.
+
+**Schaaf, J. V.**, Jepma, M., Visser, I., & Huizenga, H. M. (2019). [A hierarchical Bayesian approach to assess learning and guessing strategies in reinforcement learning](https://doi.org/10.1016/j.jmp.2019.102276). *Journal of Mathematical Psychology*, *93*, 102276.
+
+### Decision Making
+
+Zadelaar, J. N., Agelink van Rentergem, J. A., **Schaaf, J. V.**, Dekkers, T. J., De Vent, N., Dekkers, L. M. S., Olthof, M. C., Jansen, B. R. J., & Huizenga, H. M. (2021). [Development of decision making based on internal and external information: A hierarchical Bayesian approach](https://doi.org/10.1017/S1930297500008482). *Judgment and Decision Making*, *16*(6), 1413-1438.

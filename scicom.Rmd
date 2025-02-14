@@ -1,0 +1,36 @@
+---
+title: "Science Communication"
+output: 
+  distill::distill_article:
+    toc: true
+    toc_float: true
+---
+
+<div style="text-align: justify"> I find it important and rewarding to communicate my findings in an understandable manner. As such, I try to come up with fun ways to show the public what I'm working on. Think of infographics, blogs, theater shows, exhibitions, etc.</div>
+
+### Teaching packages and educational videos
+
+Together with Sophie Hofman and Feline van Aagten from the [Lifespan Cognitive Dynamics lab](https://lifespancognitivedynamics.com/), I developed [teaching packages](https://www.codecstudie.nl/klas.html) for elementary-school children. These packages include lectures and videos on being a scientist and on the brain, specifically on senses and memory.
+
+**Being a scientist**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SedlvWsgGuI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+**The brain: Senses**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/w_3EK5WIvC8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+**The brain: Memory**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kZ54oAeC9Z8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Popular writing (articles and blogs)
+
+When I come across cool papers or news items about (the development of) cognitive performance and/or cognitive fluctuations, I like to write about it. I recently wrote a blog on [the importance of science communication](https://lifespancognitivedynamics.com/posts/2024-01-02-scicom/) and on [cognitive fluctuations](https://lifespancognitivedynamics.com/posts/2024-10-31-Elections/) in the context of the American presidential elections.
+
+I also wrote an [article on giftedness in adults](https://www.pleunvanvliet.nl/artikelen/) for the trade journal *De Psycholoog* with clinical psychologist [Pleun van Vliet](https://www.pleunvanvliet.nl/). An example of the good things that happen when scientist meets clinician!
+
+### Participation in the Hoe?Zo! Show (2020/2021)
+
+As a PhD student, I was lucky to participate in the award winning [Hoe?Zo! Show](https://hoezoshow.nl/), a science theater show for 9- to 10-year-olds developed by Barbara Braams and Lennart de Groot, and presented by Boy Vissers. The goal of the show was to get children excited about science while at the same time teaching the PhD students how to communicate science in an understandable manner. Over 500 children could ask their burning questions which I, together with fellow PhDs from a variety of fields, answered on the spot in a creative and age-appropriate manner. Our season was featured in [Trouw](https://www.trouw.nl/binnenland/in-de-hoe-zo-show-leggen-promovendi-wetenschap-uit-aan-kinderen-en-als-ze-falen-moeten-ze-dansen~be9c22e3/) and many local news outlets.
+

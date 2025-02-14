@@ -1,14 +1,14 @@
-name: "jessicaschaaf"
-title: "My Website"
+name: "Jessica Schaaf"
+title: "Jessica Schaaf"
 description: |
-  My Website
+  Everything you need to know about me and my work
 output_dir: "docs"
 navbar:
   right:
-    - text: "Home"
-      href: index.html
-    - text: "About"
+    - text: "Contact"
       href: about.html
-    - text: "New"
-      href: newpage.html
+    - text: "Research"
+      href: work.html
+    - text: "Science Communication"
+      href: scicom.html
 output: distill::distill_article

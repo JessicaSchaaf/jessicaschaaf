@@ -1,10 +1,20 @@
 ---
-title: "About this site"
-description: |
-  Some additional details about the website
+title: "Jessica Schaaf"
+image: "pictures/photo-round.jpg"
+links:
+  - label: Email
+    url: "mailto:jessica.schaaf@radboudumc.nl"
+  - label: LinkedIn
+    url: "https://www.linkedin.com/in/jessica-schaaf-18578312a/"
+  - label: GitHub
+    url: "https://github.com/JessicaSchaaf"
+  - label: OSF
+    url: "https://osf.io/ygnvd"
+output:
+  postcards::jolla
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
+<div style="text-align: justify"> I'm Jessica Schaaf, a postdoctoral researcher interested in how cognitive abilities develop with age and individual differences therein. To understand this, I mostly use experiments in combination with Bayesian computational modeling. Aside from research, I love to do some fun creative science communication.
+
+When my schedule allows it, I'm very happy to start new projects, participate in science communication activities, and consult on data analyses, so please feel free to reach out. </div>
 
