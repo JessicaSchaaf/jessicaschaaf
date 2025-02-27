@@ -1,0 +1,53 @@
+[
+  {
+    "path": "posts/2025-02-27-dsem-tutorial/",
+    "title": "DSEM Tutorial",
+    "description": "Fitting Standard and DYNASTI Dynamic Structural Equation Models in Stan",
+    "author": [
+      {
+        "name": "Jessica Schaaf",
+        "url": {}
+      }
+    ],
+    "date": "2025-02-27",
+    "categories": [],
+    "contents": "\r\n\r\n\r\n\r\nDynamic Structural Equations Models (DSEMs; Asparouhov et al., 2018; McNeish et al., 2020) have become increasingly popular to analyze time series data. One of the simplest versions contains three parameters: the average time series value (mean), how your time series lingers from one time point to the next (first-order autogression), and any unexplained fluctuations (residual variance). We recently wrote a preprint on how fitting an extended “DYNASTI” DSEM, in which you allow temporal dynamics to differ for above- and below-average time series values, allows you to uncover interesting asymmetric dynamics in your time series. Check out the preprint here! Interested in fitting the models to your own data? Try the tutorial I created together with Michael Aristodemou and Feline van Aagten! It uses Bayesian estimation through the open software Stan.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2025-02-27-dsem-tutorial/DSEM_full.PNG",
+    "last_modified": "2025-02-27T18:11:29+01:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2024-10-31-Elections/",
+    "title": "Bad night or beginning of the end?",
+    "description": "On the American presidential elections and cognitive functioning",
+    "author": [
+      {
+        "name": "Jessica Schaaf",
+        "url": {}
+      }
+    ],
+    "date": "2024-10-31",
+    "categories": [],
+    "contents": "\r\n\r\n\r\n\r\nWith the American presidential elections coming up, there is a lot to do about the cognitive functioning of the presidential candidates. In the months before Joe Biden dropped out of the presidential race, he for example forgot when he served as vice president and mixed up names of world leaders. This made people wonder whether he was capable of leading a world nation for another four years – what if a dip in performance comes at a crucial time? Recently, similar concerns have been raised about Donald Trump, with him referring to non-existing movies and misnaming the current president. Concerning… one may think… the beginning of the end? But how do you distinguish between “just having a bad night” (known as fluctuations) and actual cognitive decline?\r\nTo answer this question, it is necessary to understand what is normal, especially for people of Biden’s (81) and Trump’s (78) age. From science, we know that cognitive abilities, like your memory, fluctuate over time. One day you easily remember where you put that shirt, whereas the other day you cannot find your keys. How you perform on a given day depends on many things, including your mood, how you slept, and stress levels. When you feel bad or when you are sleep deprived, like Biden suggested after one of his criticized debates, you likely perform worse. We also know that as you age, your brain transmits information less efficiently. This in turn leads to more fluctuations in cognitive performance with age, alongside normal cognitive decline.\r\nSo, when should we worry?\r\nOnly when an individual shows signs of cognitive decline for longer periods of time and when this decline is faster than in other individuals of the same age. By frequent cognitive testing–measuring cognitive functioning for a longer period of time–you are better able to assess whether bad days are followed by better days, how somebody functions generally, and which factors may cause bad days (such as poor sleep, less exercise than normal or stress).\r\n\r\nThe figure above illustrates the necessity of frequent testing. It shows hypothetical data for two individuals for whom cognitive functioning was measured from age 50 to 90. The blue individual shows substantial fluctuations across age. At some ages, their cognitive functioning is relatively good (for example at age 54 or 80), whereas at other ages, it is relatively bad (for example at age 74). Yet, looking at their overall functioning across age, it fluctuates around a stable average, indicating little to no cognitive decline. The red individual, on the other hand, shows clear cognitive decline, with much worse cognitive functioning at age 90 than at age 50. If we would take a snapshot of these individuals at a certain age, it would be impossible to distinguish between cognitive fluctuations and decline. If we would do so at age 70 (indicated by the black dot), we would conclude that the blue and red individual have similar cognitive functioning, even though their development is very different.\r\nThus to determine whether presidential candidates have a bad night or whether they experience actual cognitive decline, we need information on cognitive functioning over a longer period of time. Of course, age matters in the context of cognitive functioning, but age by itself is no guarantee for substantial decline. So, try to see the bigger picture and don’t get distracted by one shaky debate.\r\nJessica Schaaf, researcher in cognitive fluctuations\r\n\r\n\r\n\r\n",
+    "preview": "posts/2024-10-31-Elections/trump_vs_harris.jpg",
+    "last_modified": "2024-11-01T12:13:33+01:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2024-01-02-scicom/",
+    "title": "The icing on the cake",
+    "description": "Why science communication should be part of everyone's science",
+    "author": [
+      {
+        "name": "Jessica Schaaf",
+        "url": {}
+      }
+    ],
+    "date": "2024-01-02",
+    "categories": [],
+    "contents": "\r\n\r\n\r\n\r\nThis year I came up with a New Year’s resolution that I can actually keep: more science communication. So let’s get off to a good start with some science communication… on… science communication!\r\nIn my opinion, science communication entails all communication that aims to convey scientific knowledge, for example, to spark interest or to create awareness or enjoyment. Although we as scientists are not the only ones who can communicate science, the general public puts a lot of faith in our communication; even more so than in that of, for example, the government or journalists (e.g., KNAW, 2013; Rutjens et al., 2018). Besides, we are trained to critically evaluate each other’s (and our own) work, to connect different sources of information, and to communicate scientific results in a clear comprehensible manner. I therefore see it as a scientist’s duty to convey what they learn to the general public. Because what is scientific knowledge worth if it doesn’t reach the general public?\r\nHuman beings are curious… also about your work, Polly!\r\nHowever, science communication is easier said than done. For instance, how do you decide what to communicate? I know many people who throw in the towel at this point, people like pessimistic Polly. Polly likes science communication, but mainly when other people do it. She assumes “nobody is interested in her findings” because “her research is so fundamental, nobody will understand and nobody cares“. I used to be like Polly but talking to people changed my perspective. Yes… a simple thing like talking to people outside of your scientific bubble helps! It does so because it helps you translate tough science into normal language. And because it helps you realize that everything that you have learned during your studies is new to the general public. Everything that you and your fellow scientists investigate now even more so. People are generally very curious beings, constantly trying to minimize the uncertainty about the world around them. Help them to do so!\r\nTimes are changing… so take the time, Bart!\r\nI also met many people that don’t take the time for science communication, people like busy Bart. Bart isn’t such a fan of science communication because “there are so many other, more important things to do”. And in a way, he is right. Science usually doesn’t incentivize science communication. However, times are changing! Nowadays, almost all universities have active science communication departments (who can help!), grants often require some sort of translational impact or outreach, large grants exclusively for science communication are now available (e.g., from the Dutch Science Agenda) and fun initiatives are popping up (e.g., the “Hoe?Zo! Show” and “Lil’ Scientist”). And even if you don’t care about these things, I would argue communicating your results to a lay public speeds up the writing of your papers: because of character limits on social media platforms, you will notice it helps you think about the main message and how to convey it as clearly as possible.\r\nGet in touch with your creative side and start simple\r\nThere’s no need to be like pessimistic Polly or busy Bart. Science communication can be for everyone. See it as the icing on the cake. Get in touch with your creative self and think about what you like to do. Do you like to find hidden gems in the paper jungle? Once you find them, write about it on social media platforms like X (generally good to reach academics) or LinkedIn (generally good to reach non-academics such as clinicians and teachers). Are you more of a visual person? Create infographics once you have results (I know from experience participants really appreciate this way of keeping them up to date). Of course you can make it as crazy as you want. Writing blog posts on your personal or lab website, organizing workshops, recoding podcasts, and so on. However, start simple! Even sharing a new paper on social media counts as science communication.\r\nSo stop reading and start communicating!\r\nJessica Schaaf\r\n\r\n\r\n\r\n",
+    "preview": "posts/2024-01-02-scicom/cherryoncake.png",
+    "last_modified": "2024-11-01T12:12:24+01:00",
+    "input_file": {}
+  }
+]

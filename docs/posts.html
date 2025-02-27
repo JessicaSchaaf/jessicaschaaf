@@ -88,26 +88,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>Jessica Schaaf: Science Communication</title>
+  <title>Jessica Schaaf: Blogposts and Tutorials</title>
 
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Jessica Schaaf: Science Communication"/>
+  <meta property="og:title" content="Jessica Schaaf: Blogposts and Tutorials"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Jessica Schaaf"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Jessica Schaaf: Science Communication"/>
+  <meta property="twitter:title" content="Jessica Schaaf: Blogposts and Tutorials"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output"]}},"value":[{"type":"character","attributes":{},"value":["Science Communication"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_float"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","listing"]}},"value":[{"type":"character","attributes":{},"value":["Blogposts and Tutorials"]},{"type":"character","attributes":{},"value":["distill::distill_article"]},{"type":"character","attributes":{},"value":["posts"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2111,12 +2111,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 </head>
 
-<body>
+<body class="layout-listing">
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Science Communication","authors":[]}
+{"title":"Blogposts and Tutorials","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2139,9 +2139,202 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
+<!--radix_placeholder_article_listing-->
+
+
+<script type="application/javascript">
+
+function init_posts_list() {
+
+  function load_image(img) {
+    var src = $(img).attr('data-src');
+    if (src) {
+      $(img).attr('src', src);
+      $(img).on("load", function() {
+        img.removeAttribute('data-src');
+      });
+    }
+  }
+
+  function set_posts_visible(posts, visible) {
+    if (visible) {
+
+      // show bottom border by default
+      $(posts).removeClass('post-preview-last');
+
+      // apply limits if need be
+      var max_posts = 25;
+      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
+      if (apply_limits && posts.length > max_posts) {
+        posts = $(posts).slice(0, max_posts);
+      } else {
+        $('.posts-more a').addClass('hidden');
+      }
+
+      // apply last style
+      $(posts.slice(-1)[0]).addClass('post-preview-last');
+
+      $(posts).removeClass('hidden');
+      $(posts).find('img[data-src]').each(function(i, img) {
+        load_image(img);
+      });
+    } else {
+      $(posts).addClass('hidden');
+    }
+  }
+
+  function apply_hash_filter() {
+
+    // clear active state
+    $('.categories .active').removeClass('active');
+
+    // mark all posts invisible to start
+    set_posts_visible($('.posts-list').children('a'), false);
+
+    // if we have a hash filter
+    if (window.location.hash && window.location.hash.startsWith("#category:")) {
+
+      // mark posts that match the category visible
+      var page_category = window.location.hash.replace(/^#category:/, "");
+      page_category = decodeURIComponent(page_category)
+      var posts = $('.post-metadata').map(function(idx, script) {
+        var metadata = $.parseJSON($(script).html());
+        var post = null;
+        $.each(metadata.categories, function(idx, category) {
+          category = category.replace(/ /g,"_");
+          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
+            post = $(script).parent().get();
+            return false;
+          }
+        });
+        return post;
+      });
+      set_posts_visible(posts, true);
+
+      // mark the hash active
+      $('.categories li>a[href="' + decodeURIComponent(window.location.hash) + '"]').addClass('active');
+
+      // update the list_caption
+      var list_caption = $('.posts-list-caption');
+      var caption = (page_category || '').toLowerCase() === "articles"
+        ? list_caption.attr('data-caption')
+        : ('Category: ' + page_category.replace(/_/g," "));
+      list_caption.text(caption);
+
+    } else {
+
+      // no hash filter, make all posts visible (subject to max display)
+      set_posts_visible($('.posts-list').children(), true);
+
+      // reset list caption
+      var list_caption = $('.posts-list-caption');
+      list_caption.text(list_caption.attr('data-caption'));
+
+
+    }
+  }
+
+  // more articles
+  function apply_post_limits(apply) {
+    if (apply) {
+      $('.posts-container').addClass('posts-apply-limit');
+      $('.posts-more a').removeClass('hidden');
+    } else {
+      $('.posts-container').removeClass('posts-apply-limit');
+      $('.posts-more a').addClass('hidden');
+    }
+  }
+
+  // click handling for tags
+  $('.dt-tag').click(function(ev) {
+    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
+    return false;
+  })
+
+  // hash filter handling
+  apply_hash_filter();
+  $(window).on('hashchange',function() {
+    apply_post_limits(true);
+    apply_hash_filter();
+  });
+
+  // more articles link
+  $('.posts-more a').click(function(e) {
+    e.preventDefault();
+    apply_post_limits(false);
+    apply_hash_filter();
+    return false;
+  });
+
+}
+
+</script>
+
+
+
+<div class="posts-container posts-apply-limit l-page">
+<div class="posts-list">
+<h1 class="posts-list-caption" data-caption="Blogposts and Tutorials">Blogposts and Tutorials</h1>
+<a href="posts/2025-02-27-dsem-tutorial/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":[]}</script>
+<div class="metadata">
+<div class="publishedDate">Feb. 27, 2025</div>
+<div class="dt-authors">
+<div class="dt-author">Jessica Schaaf</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="posts/2025-02-27-dsem-tutorial/DSEM_full.PNG"/>
+</div>
+<div class="description">
+<h2>DSEM Tutorial</h2>
+<div class="dt-tags"></div>
+<p>Fitting Standard and DYNASTI Dynamic Structural Equation Models in Stan</p>
+</div>
+</a>
+<a href="posts/2024-10-31-Elections/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":[]}</script>
+<div class="metadata">
+<div class="publishedDate">Oct. 31, 2024</div>
+<div class="dt-authors">
+<div class="dt-author">Jessica Schaaf</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="posts/2024-10-31-Elections/trump_vs_harris.jpg"/>
+</div>
+<div class="description">
+<h2>Bad night or beginning of the end?</h2>
+<div class="dt-tags"></div>
+<p>On the American presidential elections and cognitive functioning</p>
+</div>
+</a>
+<a href="posts/2024-01-02-scicom/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":[]}</script>
+<div class="metadata">
+<div class="publishedDate">Jan. 2, 2024</div>
+<div class="dt-authors">
+<div class="dt-author">Jessica Schaaf</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="posts/2024-01-02-scicom/cherryoncake.png"/>
+</div>
+<div class="description">
+<h2>The icing on the cake</h2>
+<div class="dt-tags"></div>
+<p>Why science communication should be part of everyone's science</p>
+</div>
+</a>
+</div>
+<div class="posts-more">
+<a href="#">More articles &raquo;</a>
+</div>
+</div>
+<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>Science Communication</h1>
+<h1>Blogposts and Tutorials</h1>
 
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
@@ -2150,35 +2343,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 <div class="d-article">
-<div class="d-contents d-contents-float">
-<nav class="l-text toc figcaption" id="TOC">
-<h3>Contents</h3>
-<ul>
-<li><a href="#teaching-packages-and-educational-videos" id="toc-teaching-packages-and-educational-videos">Teaching packages and educational videos</a></li>
-<li><a href="#popular-writing-articles-and-blogs" id="toc-popular-writing-articles-and-blogs">Popular writing (articles and blogs)</a></li>
-<li><a href="#participation-in-the-hoezo-show-20202021" id="toc-participation-in-the-hoezo-show-20202021">Participation in the Hoe?Zo! Show (2020/2021)</a></li>
-</ul>
-</nav>
-</div>
-<div style="text-align: justify">
-I find it important and rewarding to communicate my findings in an understandable manner. As such, I try to come up with fun ways to show the public what I’m working on. Think of infographics, blogs, theater shows, exhibitions, etc.
-</div>
-<h3 id="teaching-packages-and-educational-videos">Teaching packages and educational videos</h3>
-<p>Together with Sophie Hofman and Feline van Aagten from the <a href="https://lifespancognitivedynamics.com/">Lifespan Cognitive Dynamics lab</a>, I developed <a href="https://www.codecstudie.nl/klas.html">teaching packages</a> for elementary-school children. These packages include lectures and videos on being a scientist and on the brain, specifically on senses and memory.</p>
-<p><strong>Being a scientist</strong></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SedlvWsgGuI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-<p><strong>The brain: Senses</strong></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/w_3EK5WIvC8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-<p><strong>The brain: Memory</strong></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kZ54oAeC9Z8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-<h3 id="popular-writing-articles-and-blogs">Popular writing (articles and blogs)</h3>
-<p>When I come across cool papers or news items about (the development of) cognitive performance and/or cognitive fluctuations, I like to write about it. I recently wrote a blog on <a href="https://lifespancognitivedynamics.com/posts/2024-01-02-scicom/index.html">the importance of science communication</a> and on <a href="https://lifespancognitivedynamics.com/posts/2024-10-31-Elections/">cognitive fluctuations</a> in the context of the American presidential elections.</p>
-<p>I also wrote an <a href="https://www.pleunvanvliet.nl/artikelen/">article on giftedness in adults</a> for the trade journal <em>De Psycholoog</em> with clinical psychologist <a href="https://www.pleunvanvliet.nl/">Pleun van Vliet</a>. An example of the good things that happen when scientist meets clinician!</p>
-<h3 id="participation-in-the-hoezo-show-20202021">Participation in the Hoe?Zo! Show (2020/2021)</h3>
-<p>As a PhD student, I was lucky to participate in the award winning <a href="https://hoezoshow.nl/">Hoe?Zo! Show</a>, a science theater show for 9- to 10-year-olds developed by Barbara Braams and Lennart de Groot, and presented by Boy Vissers. The goal of the show was to get children excited about science while at the same time teaching the PhD students how to communicate science in an understandable manner. Over 500 children could ask their burning questions which I, together with fellow PhDs from a variety of fields, answered on the spot in a creative and age-appropriate manner. Our season was featured in <a href="https://www.trouw.nl/binnenland/in-de-hoe-zo-show-leggen-promovendi-wetenschap-uit-aan-kinderen-en-als-ze-falen-moeten-ze-dansen~be9c22e3/">Trouw</a> and many local news outlets.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
