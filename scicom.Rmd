@@ -10,7 +10,7 @@ output:
 
 ### Teaching packages and educational videos
 
-Together with Sophie Hofman and Feline van Aagten from the [Lifespan Cognitive Dynamics lab](https://lifespancognitivedynamics.com/), I developed [teaching packages](https://www.codecstudie.nl/klas.html) for elementary-school children. These packages include lectures and videos on being a scientist and on the brain, specifically on senses and memory.
+Together with Sophie Hofman, Feline van Aagten, and Rogier Kievit from the [Lifespan Cognitive Dynamics lab](https://lifespancognitivedynamics.com/), I developed [teaching packages](https://www.codecstudie.nl/klas.html) for elementary-school children. These packages include lectures and videos on being a scientist and on the brain, specifically on senses and memory.
 
 **Being a scientist**
 

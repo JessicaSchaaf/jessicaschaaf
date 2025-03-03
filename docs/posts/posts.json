@@ -11,10 +11,10 @@
     ],
     "date": "2025-02-27",
     "categories": [],
-    "contents": "\r\n\r\n\r\n\r\nDynamic Structural Equations Models (DSEMs; Asparouhov et al., 2018; McNeish et al., 2020) have become increasingly popular to analyze time series data. One of the simplest versions contains three parameters: the average time series value (mean), how your time series lingers from one time point to the next (first-order autogression), and any unexplained fluctuations (residual variance). We recently wrote a preprint on how fitting an extended “DYNASTI” DSEM, in which you allow temporal dynamics to differ for above- and below-average time series values, allows you to uncover interesting asymmetric dynamics in your time series. Check out the preprint here! Interested in fitting the models to your own data? Try the tutorial I created together with Michael Aristodemou and Feline van Aagten! It uses Bayesian estimation through the open software Stan.\r\n\r\n\r\n\r\n",
+    "contents": "\r\n\r\n\r\n\r\nDynamic Structural Equations Models (DSEMs; Asparouhov et al., 2018; McNeish et al., 2020) have become increasingly popular to analyze time series data. One of the simplest versions contains three parameters: the average time series value (mean), how your time series lingers from one time point to the next (first-order autogression), and any unexplained fluctuations (residual variance). We recently wrote a preprint on how fitting an extended “DYNASTI” DSEM, in which you allow temporal dynamics to differ for above- and below-average time series values, allows you to uncover interesting asymmetric dynamics in your time series data. Check out the preprint here! Interested in fitting the models to your own data? Try the tutorial I created together with Michael Aristodemou, Feline van Aagten, and Rogier Kievit! It uses Bayesian estimation through the open software Stan.\r\n\r\n\r\n\r\n",
     "preview": "posts/2025-02-27-dsem-tutorial/DSEM_full.PNG",
-    "last_modified": "2025-02-27T18:11:29+01:00",
-    "input_file": {}
+    "last_modified": "2025-03-03T16:42:22+01:00",
+    "input_file": "dsem-tutorial.knit.md"
   },
   {
     "path": "posts/2024-10-31-Elections/",
