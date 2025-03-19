@@ -14,7 +14,7 @@ output:
   postcards::jolla
 ---
 
-<div style="text-align: justify"> I'm Jessica Schaaf, a postdoctoral researcher interested in how cognitive abilities develop with age and individual differences therein. To understand this, I mostly use experiments in combination with Bayesian computational modeling. Aside from research, I love to do some fun creative science communication.
+<div style="text-align: justify"> I'm Jessica Schaaf, a postdoctoral researcher interested in how cognitive abilities develop with age and individual differences therein. To understand this, I mostly use experiments in combination with Bayesian computational modeling. Aside from research, I love to do some fun creative science communication. You can find my CV [here](https://jessicaschaaf.github.io/jessicaschaaf/CV_JessicaSchaaf.pdf).
 
 When my schedule allows it, I'm very happy to start new projects, participate in science communication activities, and consult on data analyses, so please feel free to reach out. </div>
 
