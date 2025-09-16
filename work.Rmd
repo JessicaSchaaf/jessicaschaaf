@@ -14,8 +14,6 @@ You can find my dissertation on the development of reinforcement learning strate
 
 ### Time series
 
-- Bidirectional relationships between depressive mood and cognition. *In collaboration with* Ema Jovanovic and Rogier Kievit (Donders/Radboudumc).
-
 - The role of ambient noise in cognitive variability: A dynamic structural equation modeling approach. *In collaboration with* Afon Khari and Rogier Kievit (Donders/Radboudumc).
 
 ### Reinforcement learning
@@ -32,11 +30,13 @@ You can find my dissertation on the development of reinforcement learning strate
 
 ### Most recent papers and preprints
 
-**Schaaf, J. V.**, Sorensen, O., McCormick, E. M., Aristodemou, A., & Kievit, R. A. (in press). [Uncovering asymmetric temporal dynamics using threshold dynamics parameters](https://doi.org/10.31219/osf.io/3b5ra_v2). *Structural Equation Modeling: A Multidisciplinary Journal*.
+**Schaaf, J. V.**, Sorensen, O., McCormick, E. M., Aristodemou, M., & Kievit, R. A. (in press). [Uncovering asymmetric temporal dynamics using threshold dynamics parameters](https://doi.org/10.31219/osf.io/3b5ra_v2). *Structural Equation Modeling: A Multidisciplinary Journal*.
 
 **Schaaf, J. V.**, Miletic, S., Van Duijvenvoorde, A. C. K., & Huizenga, H. M. (2025). [Interpretation of individual differences in compuational neuroscience using a latent input approach](https://doi.org/10.1016/j.dcn.2025.101512). *Developmental Cognitive Neuroscience*, 101512.
 
 **Schaaf, J. V.**, Dekkers, L. M. S., Kevenaar, S. T., Seijdel, N., Weeda, W. D., Jansen, B. R. J., Visser, I., & Huizenga, H. M. (2024). [First things first? Decision strategies in a consecutive contexts](https://osf.io/cywfd). *PsyArXiV*.
+
+**Schaaf, J. V.**, Huizenga, H. M., Visser, I., & Jepma, M. (under review). Age-related changes in context-valence effects on learning and confidence.
 
 ### Reinforcement Learning
 
