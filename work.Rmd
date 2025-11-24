@@ -18,7 +18,7 @@ You can find my dissertation on the development of reinforcement learning strate
 
 ### Reinforcement learning
 
-- Feedback matters: Children's feedback sensitivity in a large online learning platform. *In collaboration with* Michael Aristodemou, Rogier Kievit, and Prowise Learn (Donders/Radboudumc, UvA).
+- Feedback matters: Children's feedback sensitivity in a large online learning platform. *In collaboration with* Michael Aristodemou, Rogier Kievit, and Abe Hofman (Donders/Radboudumc, UvA/Prowise Learn).
 
 - Inter- and intra-individual differences in exploratory behavior. *In collaboration with* Rogier Kievit and the CODEC team (Donders/Radboudumc).
 
@@ -30,7 +30,7 @@ You can find my dissertation on the development of reinforcement learning strate
 
 ### Most recent papers and preprints
 
-**Schaaf, J. V.**, Sorensen, O., McCormick, E. M., Aristodemou, M., & Kievit, R. A. (in press). [Uncovering asymmetric temporal dynamics using threshold dynamics parameters](https://doi.org/10.31219/osf.io/3b5ra_v2). *Structural Equation Modeling: A Multidisciplinary Journal*.
+**Schaaf, J. V.**, Sorensen, O., McCormick, E. M., Aristodemou, M., & Kievit, R. A. (2025). [Uncovering asymmetric temporal dynamics using threshold dynamics parameters](https://doi.org/10.1080/10705511.2025.2519208). *Structural Equation Modeling: A Multidisciplinary Journal*.
 
 **Schaaf, J. V.**, Miletic, S., Van Duijvenvoorde, A. C. K., & Huizenga, H. M. (2025). [Interpretation of individual differences in compuational neuroscience using a latent input approach](https://doi.org/10.1016/j.dcn.2025.101512). *Developmental Cognitive Neuroscience*, 101512.
 
