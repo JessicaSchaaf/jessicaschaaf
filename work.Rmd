@@ -14,11 +14,15 @@ You can find my dissertation on the development of reinforcement learning strate
 
 ### Time series
 
-- The role of ambient noise in cognitive variability: A dynamic structural equation modeling approach. *In collaboration with* Afon Khari and Rogier Kievit (Donders/Radboudumc).
+- Continuous environmental monitoring of Dutch classrooms. *In collaboration with* Stijn Reits and Rogier Kievit (Donders/Radboudumc).
+
+- Time-of-day fluctuations in cognitive performance. *In collaboration with* Aline Korver (RUG) and Nick Judd (Stockholm University).
+
+- Cognitive performance and temperature. *In collaboration with* Aline Korver (RUG), Oystein Sorensen (Oslo University), and Nick Judd (Stockholm University).
+
+- The role of ambient noise in cognitive variability: A dynamic structural equation modeling approach. *In collaboration with* Afon Khari (UvA) and Rogier Kievit (Donders/Radboudumc).
 
 ### Reinforcement learning
-
-- Feedback matters: Children's feedback sensitivity in a large online learning platform. *In collaboration with* Michael Aristodemou, Rogier Kievit, and Abe Hofman (Donders/Radboudumc, UvA/Prowise Learn).
 
 - Inter- and intra-individual differences in exploratory behavior. *In collaboration with* Rogier Kievit and the CODEC team (Donders/Radboudumc).
 
@@ -29,6 +33,8 @@ You can find my dissertation on the development of reinforcement learning strate
 ## Papers
 
 ### Most recent papers and preprints
+
+**Schaaf, J. V.**, Aristodemou, M., Hofman, A. D., & Kievit, R. A. (2025). [Feedback matters: Children perform worse after negative feedback in a large online learning platform](https://doi.org/10.31234/osf.io/zmpvd_v1). *PsyArXiV*.
 
 **Schaaf, J. V.**, Sorensen, O., McCormick, E. M., Aristodemou, M., & Kievit, R. A. (2025). [Uncovering asymmetric temporal dynamics using threshold dynamics parameters](https://doi.org/10.1080/10705511.2025.2519208). *Structural Equation Modeling: A Multidisciplinary Journal*.
 

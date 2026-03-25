@@ -8,6 +8,14 @@ output:
 
 <div style="text-align: justify"> I find it important and rewarding to communicate my findings in an understandable manner. As such, I try to come up with fun ways to show the public what I'm working on. Think of infographics, blogs, theater shows, exhibitions, etc.</div>
 
+### Science festivals
+
+Together with Feline van Aagten, Kevin Reniers, Lena Kohler, and Rogier Kievit, I respresented [the Lifespan Cognitive Dynamics lab](https://lifespancognitivedynamics.com/) at [Kletskoppen festival](https://kletskoppenfestival.nl/) and [the Donders Open Day](https://www.ru.nl/donders-institute/agenda/donders-institute-open-dag). Two days full of inquisitive children and parents that asked us all about cognition and the brain and participated in our experiment on the effects of different noise sources on (fluctuations in) cognitive performance.
+
+```{r, out.width = "30%", fig.show="hold", fig.align="center", echo=FALSE}
+#knitr::include_graphics(c("pictures/kletskoppen.jpg","pictures/openday1.jpg","pictures/openday2.jfif"))
+```
+
 ### Teaching packages and educational videos
 
 Together with Sophie Hofman, Feline van Aagten, and Rogier Kievit from the [Lifespan Cognitive Dynamics lab](https://lifespancognitivedynamics.com/), I developed [teaching packages](https://www.codecstudie.nl/klas.html) for elementary-school children. These packages include lectures and videos on being a scientist and on the brain, specifically on senses and memory.
